@@ -1,0 +1,81 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" href="style.css">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+		</script>
+	</head>
+	
+	<body>
+		<div class="conteiner" >
+			<nav class="menu">
+				<div id="logo">
+			
+					<img src="images/logo.svg">
+			
+					<p> Score <br> <span id="resu"> 0 </span> </p>
+				</div>
+			</nav>
+			<div id="imgs">
+				<div id="paper" class="cont_img">
+					<img id="paper_img" class="img" src="images/icon-paper.svg">
+				</div>
+			
+				<div id="scissors" class="cont_img">
+					<img id="scissors_img" class="img" src="images/icon-scissors.svg">
+				</div>
+			
+				<img id="triangle" class="cont_img" src="images/bg-triangle.svg">
+			
+			
+				<div id="rock" class="cont_img">
+					<img id="rock_img" class="img" src="images/icon-rock.svg">
+				</div>
+			</div>
+			
+			<div id="null" >
+				<img id="rock_img2" class="img2" src="images/icon-rock.svg">
+				<img id="scissors_img2" class="img2" src="images/icon-scissors.svg">
+				<img id="paper_img2" class="img2" src="images/icon-paper.svg">
+			</div>
+			
+			<div id="msgs" class="msg">
+				<div id="play1">
+					<h4 id="nada"> You Picked </h4>
+				</div>
+			
+				<div id="play2">
+					<h4> The House Picked </h4>
+				</div>	
+			</div>
+			
+			<div id="myNav" class="overlay">
+				<div class="overlay-content">
+					<h4> RULES </h4>
+					<h6 style="position: relative; top: -80px"> click <span style="border: solid; padding: 0.3em" onclick="gameOriginal()">AQUI</span> para jogar a versão bonus</h6>
+					<img id="rules" src="images/image-rules.svg">
+				</div>
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			</div>
+			
+			<div id="replay">
+				<h3 id="lose" class="text-end">  </h3>
+				<h3 id="win" class="text-end">  </h3>
+				<button id="again">Play Again </button>
+			</div><br>
+			
+			<button> <span onclick="openNav()"> Rules </span> </button>		
+		</div>
+		
+		<script linguage="javascript" src="script.js"></script>
+		<script linguage="javascript" src="jquery.js"></script>
+		
+	</body>
+</html>
