@@ -1,3 +1,12 @@
+/** Script Rules Original **/
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
 /** Script Buttons Original **/
 $(document).ready(function(){
 	var play1 = "";
